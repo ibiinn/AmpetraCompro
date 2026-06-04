@@ -2136,6 +2136,12 @@ textarea.input-lg,select[multiple].input-lg {
     right: 15px
 }
 
+.flexslider a{
+    display: block;
+    matgin-left: 0px;
+    width: 150px
+}
+
 .btn {
     display: inline-block;
     margin-bottom: 0;

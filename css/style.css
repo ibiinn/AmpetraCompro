@@ -500,6 +500,11 @@ margin: 0 auto;
 display: block;
 max-width: 100%;
 }
+
+.flexslider .slides img{
+	max-height: 940px;
+}
+
 /* Testimonial
 ----------------------------------*/
 .testimonial-area {
@@ -986,7 +991,7 @@ blockquote cite a:visited 				{ color:#555; }
 .btn{text-align: center;
 background: #fba301;
 color: #FFF;
-border-radius: 0;padding: 12px 22px;border: 0;}
+border-radius: 10px;padding: 12px 22px;border: 0;}
 .btn-theme {
 	color: #fff;
 	background: rgba(245, 138, 46, 1);
@@ -1641,8 +1646,10 @@ width: 100%;
   text-align: center;
   margin: 0px;
   border: none !important;
-  border-radius: 0;
+  border-radius: 10px;
   float: left; 
+  margin-right: 33px;
+  margin-bottom: 15px;
 }
 .contact .submit:hover {
   background: #81C402;
@@ -1800,6 +1807,9 @@ li.active {
 		bottom: -40px; 
 	}
 
+	.flexslider .slides .sliders input {
+		width: 10000px;
+	}
 
 	#inner-headline .breadcrumb {
 		float:left;
@@ -1857,13 +1867,14 @@ li.active {
     .flex-caption h3 {
         font-size: 24px;
         line-height: 30px;
-        margin-bottom: 2px;
+        margin-bottom: 10px;
     }
 
     .flex-caption p {
         font-size: 16px;
         line-height: 22px;
         margin: 0;
+		margin-bottom: 10px;
     }
 	
 
@@ -1894,12 +1905,14 @@ li.active {
         font-size: 18px;
         line-height: 22px;
 		margin-top: 0px;
+		margin-bottom: 10px;
 
     }
 
     .flex-caption p {
         font-size: 13px;
         line-height: 18px;
+		margin-bottom: 10px;
     }
 	
 	.cta-text {
