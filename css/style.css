@@ -8,6 +8,12 @@ Licence under Creative Commons Attribution 3.0
 @import url('font-awesome.css');  
 @import url('animate.css');
 
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
@@ -1808,7 +1814,8 @@ li.active {
 	}
 
 	.flexslider .slides .sliders input {
-		width: 10000px;
+		width: auto;
+		max-width: 100%;
 	}
 
 	#inner-headline .breadcrumb {
