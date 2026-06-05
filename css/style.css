@@ -13,6 +13,28 @@ body {
     overflow-x: hidden;
 }
 
+.jrgn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url('img/jargon.jpg');
+    background-position: center;
+    color: white;
+   text-align: center;
+}
+
+.video {
+	padding: 80px;
+	display: flex;
+	justify-content: center;
+}
+
+.jrgn h3{
+	font-size: 50px;
+	color: #ffffff;
+}
+
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
@@ -64,8 +86,8 @@ margin-bottom:15px;
 }
 
 
-.row,.row-fluid {
-	/* margin-bottom:50px; */
+.row, .row-fluid {
+	margin-bottom: 30px;
 }
 
 .row .row,.row-fluid .row-fluid{
@@ -96,6 +118,13 @@ background: #EFEFEF;
 display:block;
 margin: -18px 0 0;
 } 
+
+#events .btn{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	background-color: #fba301;
+}
+
 #events a:hover{
 text-decoration:none;
 }
@@ -370,9 +399,15 @@ height: 100%;
 z-index: 1;
 position: absolute;
 }
+
 .flex-direction-nav a{
 display:none;
 }
+
+.sliders{
+	height: 95%;
+}
+
 .flexslider {
 	padding:0;  
 	background: #fff; 
@@ -385,12 +420,63 @@ left:0px;
 .flex-direction-nav .flex-next{ 
 right:0px;
 }
-.flex-caption {zoom: 1;
-bottom: 0; background-color: rgba(16, 16, 16, 0.71); color: #fff; margin: 0; padding: 10px 25px; position: absolute; left: 50%; text-align: left;margin: 0 auto;right: 0px;display: flex;float: left;width: auto;text-align: center;top: 0; align-items: center;}
-.flex-caption h3 {color: #fff; letter-spacing: 1px; margin-bottom: 8px; text-transform: uppercase;font-size: 36px;text-align: left;}
-.flex-caption p {margin: 12px 0 18px;font-size:18px;line-height: 30px;text-align: left;}
+.flex-caption {
+	zoom: 1;
+	bottom: 0; 
+	background-color: rgba(16, 16, 16, 0); 
+	color: #fff; margin: 0; padding: 10px 25px; 
+	position: absolute; left: 0%; 
+	text-align: center;
+	margin: 0 auto;
+	right: 0px;
+	float: left;
+	width: auto;
+	text-align: center;
+	top: 0; 
+	align-items: center;
+}
+
+.flex-caption h3 {
+	text-shadow: 0 2px 7px black; 
+	color: #ffffff; 
+	letter-spacing: 1px; 
+	margin-bottom: 10px; 
+	text-transform: uppercase;
+	font-size: 36px;
+	text-align: center; 
+}
+
+.flex-caption p {
+	text-shadow: 0 2px 7px black; 
+	font-size:18px;
+	line-height: 30px;
+	text-align: center; 
+	height: 10%;
+}
+
 .skill-home{
 margin-bottom:50px;
+}
+
+.aboutUs .btn{
+	margin-bottom: 45px;
+}
+
+.flex-aboutUs{
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-caption .btn{
+	width: 300px;
+    position: absolute;
+    bottom: 40px;   /* jarak dari bawah slider */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flex-aboutUs .text{
+	height: 50%;
 }
 
 .c1{
@@ -1467,8 +1553,8 @@ a.scrollup i:hover {
 	float:none;
 }
 
-.aligncenter {
-	text-align:center;
+.aboutUs .aligncenter {
+	text-align:left;
 }
  
 img.pull-left, .align-left{
@@ -1684,6 +1770,13 @@ width: 100%;
 		width:100%;
 	}
 
+	.flex-caption .btn {
+    width: 200px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 	
 	footer .widget form  input#appendedInputButton {
@@ -1867,24 +1960,32 @@ li.active {
 		display: flex;
 		padding: 0px 20px;
 		align-items: center;
+		justify-content: center;
     }
 
 
     .flex-caption h3 {
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 10px;
 		margin-top: 10px;
+        font-size: 18px;
+        line-height: 22px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+
     }
 
     .flex-caption p {
-        font-size: 16px;
-        line-height: 22px;
-        margin: 0;
+        font-size: 13px;
+        line-height: 18px;
 		margin-bottom: 10px;
     }
-	
 
+		.flex-caption .btn {
+		width: 250px;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 	
   [class*="span"] {
 		margin-bottom:20px;
@@ -1909,16 +2010,16 @@ li.active {
     }
 
     .flex-caption h3 {
-		margin-top: 10px;
+		margin-top: 0px;
         font-size: 18px;
         line-height: 22px;
 		margin-top: 0px;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 
     }
 
     .flex-caption p {
-        font-size: 13px;
+        font-size: 9px;
         line-height: 18px;
 		margin-bottom: 10px;
     }
@@ -1934,6 +2035,80 @@ li.active {
 		font-size:14px;
 	}
 
+	.flex-caption .btn {
+		width: 150px;
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		align-items: center;
+	}
+
+	.btn {
+		text-align: center;
+		border: 0.2px solid #383838;
+		box-shadow: #000;
+		background: rgba(255, 160, 52, 0.9);
+		color: #FFF;
+		border-radius: 10px;
+		padding: 5px;
+		box-shadow: 0 4px 5px rgba(0, 0, 0, 0.45);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Open Sans', Arial, sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.1em;
+		color: #333;
+		margin-bottom: 7px;
+	}
+
+	p {
+		font-size: 11px;
+	}
+
+	.features .media.service-box img {
+    background: #FFFFFF;
+    width: 100%;
+	}
+
+	.row, .row-fluid {
+		margin-bottom: 10px;
+	}
+
+	section.txt-area {
+		background: #fff;
+		padding: 10px 0 0 0;
+	}
+
+	.jrgn h3 {
+		font-size: 18px;
+		color: #ffffff;
+	}
+
+	.jrgn p{
+		line-height: 1.3em;
+	}
+	.jrgn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:150px;
+		background-image: url(img/jargon.jpg);
+		background-position: center;
+		color: white;
+		text-align: center;
+	}
+
+	.aboutUs img {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.aboutUs .btn {
+		margin-bottom: 25px;
+	}
 }
 
  
