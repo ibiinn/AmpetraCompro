@@ -32,7 +32,8 @@ body {
 
 .jrgn h3{
 	font-size: 50px;
-	color: #ffffff;
+	color: #ffcb6b;
+	text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
 }
 
 body {
@@ -2215,7 +2216,7 @@ li.active {
 
 	.jrgn h3 {
 		font-size: 18px;
-		color: #fba301;
+		color: #ffcb6b;
 		text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
 	}
 
