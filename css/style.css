@@ -105,6 +105,103 @@ img.img-polaroid {
 	max-width:100%;
 }
 
+#organization {
+    padding: 80px 0;
+    background: #f8f8f8;
+}
+
+#organization img {
+    max-height: 700px;
+    width: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+.custom-arrow {
+    background: none !important;
+    font-size: 60px;
+    color: #333 !important;
+    text-shadow: none;
+    opacity: 0.8;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    width: auto;
+    height: auto;
+    line-height: 1;
+}
+
+.carousel-indicators {
+    bottom: -40px; /* supaya tidak ketutup gambar */
+}
+
+.carousel-indicators li {
+    background-color: #333;   /* warna titik */
+    border: 1px solid #fff;
+}
+
+.carousel-indicators .active {
+    background-color: #000;
+}
+
+#organization .btn{
+	margin-top: 30px;
+}
+
+#newsCarousel {
+    position: relative;
+}
+
+#newsCarousel .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background: none !important;
+    color: #ffffff;
+    font-size: 45px;
+    opacity: 1;
+    text-shadow:
+        0 0 5px rgba(0,0,0,0.8),
+        0 0 10px rgba(0,0,0,0.6);
+}
+
+.carousel-control {
+    background: none !important;
+    width: 5%;
+    color: #000;
+    text-shadow: none;
+    top: 40%;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none !important;
+}
+
+.carousel-control span {
+    position: relative;
+    top: 0;
+}
+
+.custom-arrow.left {
+    left: 20px;
+}
+
+.custom-arrow.right {
+    right: 20px;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none !important;
+}
+
 /*  Header
 ==================================== */
 
@@ -2104,6 +2201,14 @@ li.active {
 	.aboutUs img {
 		width: 100%;
 		margin-bottom: 40px;
+	}
+
+	.aboutUs p{
+		font-size: 12px;
+	}
+
+	.aboutUs li{
+		font-size: 12px;
 	}
 
 	.aboutUs .btn {
