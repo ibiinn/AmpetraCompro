@@ -11,7 +11,6 @@ Licence under Creative Commons Attribution 3.0
 html,
 body {
     overflow-x: hidden;
-    width: 100%;
 }
 
 body {
@@ -1875,6 +1874,7 @@ li.active {
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 10px;
+		margin-top: 10px;
     }
 
     .flex-caption p {
@@ -1909,6 +1909,7 @@ li.active {
     }
 
     .flex-caption h3 {
+		margin-top: 10px;
         font-size: 18px;
         line-height: 22px;
 		margin-top: 0px;
