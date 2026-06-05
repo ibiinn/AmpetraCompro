@@ -65,11 +65,11 @@ margin-bottom:15px;
 
 
 .row,.row-fluid {
-	margin-bottom:30px;
+	/* margin-bottom:50px; */
 }
 
 .row .row,.row-fluid .row-fluid{
-	margin-bottom:30px;
+	/* margin-bottom:10px; */
 }
 
 .row.nomargin,.row-fluid.nomargin {
@@ -761,8 +761,8 @@ padding: 40px 0 0;
 }
 
 #thumbs {
-	margin: 0;
-	padding: 0;	
+	margin-bottom: 110px;
+	padding: 0;
 }
 
 #thumbs li {
@@ -838,7 +838,7 @@ ul.portfolio-categ{
 }
 
 ul.portfolio-categ li{
-margin: 0; 
+margin-bottom: 10px; 
 float: left;
 list-style: none;
 font-size: 13px;

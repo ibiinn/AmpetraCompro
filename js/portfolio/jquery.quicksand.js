@@ -177,7 +177,7 @@ Github site: http://github.com/razorjack/quicksand
                 // the height can be animated, adjusting it to destination height
                 $sourceParent.animate({height: $dest.height()}, options.duration, options.easing);
             } else if (options.adjustHeight === 'auto') {
-                destHeight = $dest.height();
+                destHeight = $dest.height() + 150;
                 if (parseFloat(sourceHeight) < parseFloat(destHeight)) {
                     // Adjust the height now so that the items don't move out of the container
                     $sourceParent.css('height', destHeight);
