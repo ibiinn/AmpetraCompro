@@ -23,7 +23,7 @@ Github site: http://github.com/razorjack/quicksand
             easing: 'swing',
             attribute: 'data-id', // attribute to recognize same items within source and dest
             adjustHeight: 'auto', // 'dynamic' animates height during shuffling (slow), 'auto' adjusts it before or after the animation, false leaves height constant
-            useScaling: true, // disable it if you're not using scaling effect or want to improve performance
+            useScaling: false, // disable it if you're not using scaling effect or want to improve performance
             enhancement: function(c) {}, // Visual enhacement (eg. font replacement) function for cloned elements
             selector: '> *',
             dx: 0,
