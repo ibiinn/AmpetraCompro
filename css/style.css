@@ -121,7 +121,7 @@ img.img-polaroid {
 .custom-arrow {
     background: none !important;
     font-size: 60px;
-    color: #333 !important;
+    color: #fbfbfb !important;
     text-shadow: none;
     opacity: 0.8;
 
@@ -174,7 +174,7 @@ img.img-polaroid {
 .carousel-control {
     background: none !important;
     width: 5%;
-    color: #000;
+    color: #ffffff;
     text-shadow: none;
     top: 40%;
 }
@@ -190,11 +190,11 @@ img.img-polaroid {
 }
 
 .custom-arrow.left {
-    left: 20px;
+    left: 0px;
 }
 
 .custom-arrow.right {
-    right: 20px;
+    right: 0px;
 }
 
 .carousel-control.left,
@@ -210,7 +210,6 @@ img.img-polaroid {
 }
 
 #events a{
-padding:10px;
 background: #EFEFEF;
 display:block;
 margin: -18px 0 0;
@@ -2133,13 +2132,12 @@ li.active {
 	}
 
 	.flex-caption .btn {
-		width: 150px;
-		position: absolute;
-		bottom: 10px;
-		left: 50%;
-		transform: translateX(-50%);
-		align-items: center;
-	}
+        position: static !important;   /* ini yang penting biar gak nabrak */
+        transform: none !important;
+        margin-top: 10px;
+        width: auto;
+        display: inline-block;
+    }
 
 	.btn {
 		text-align: center;
@@ -2181,11 +2179,13 @@ li.active {
 
 	.jrgn h3 {
 		font-size: 18px;
-		color: #ffffff;
+		color: #fba301;
+		text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
 	}
 
 	.jrgn p{
 		line-height: 1.3em;
+		text-shadow: 0 3px 4px rgba(0, 0, 0, 0.8);
 	}
 	.jrgn {
 		display: flex;
@@ -2214,6 +2214,83 @@ li.active {
 	.aboutUs .btn {
 		margin-bottom: 25px;
 	}
+
+	 .flex-caption {
+        position: relative !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        width: 100%;
+        padding: 10px 10px 35px; /* kasih ruang bawah buat btn */
+		background-color: rgba(27, 33, 33)
+    }
+
+	.flex-caption .btn {
+        position: static !important;   /* ini yang penting biar gak nabrak */
+        transform: none !important;
+        margin-top: 10px;
+        width: auto;
+        display: inline-block;
+    }
+
+	.flexslider .slides > li {
+        position: relative;
+        overflow: hidden;
+    }
+
+	.flexslider .slides > li::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;   /* ini penting: akan ikut area gambar */
+
+        background: linear-gradient(
+            to top,
+            rgba(58, 58, 58, 4),
+            rgba(27, 33, 33, 1),
+            rgba(0,0,0,0)
+        );
+
+        z-index: 1;
+        pointer-events: none;
+    }
+
+	.jrgn {
+		position: relative;
+		background-image: url('img/jargon.jpg');
+		background-position: center;
+		background-size: cover;
+		color: white;
+		text-align: center;
+	}
+
+	.jrgn::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 1),   /* atas gelap */
+			rgba(255, 255, 255, 0.2),   /* tengah */
+			rgba(255, 255, 255, 1)    /* bawah gelap */
+		);
+
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.jrgn > * {
+		position: relative;
+		z-index: 2;
+	}
+    
 }
 
  
