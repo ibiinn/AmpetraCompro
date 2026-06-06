@@ -158,6 +158,10 @@ margin-bottom:15px;
 	padding:0;
 }
 
+footer .row{
+	display: flex;
+	justify-content: space-between;
+}
 
 .item .row, .row-fluid {
 	margin-bottom: 30px;
