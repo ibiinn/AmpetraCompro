@@ -1219,7 +1219,7 @@ pre code {
     }
 
     .col-md-4 {
-        width: 33%;
+        width: 32%;
         display: flex;
         justify-content: center;
     }
@@ -5948,7 +5948,7 @@ button.close {
 .carousel-control {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -45px;
     bottom: 0;
     width: 15%;
     opacity: .5;
@@ -6025,6 +6025,14 @@ button.close {
     list-style: none;
     text-align: center
     
+}
+
+#newsCarousel .row{
+    display:flex;
+}
+
+#newsCarousel .col-md-4{
+    display:flex;
 }
 
 .carousel-indicators li {
