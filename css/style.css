@@ -159,8 +159,14 @@ margin-bottom:15px;
 }
 
 
-.row, .row-fluid {
+.item .row, .row-fluid {
 	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.about-logo{
+	padding-left: 15px;
 }
 
 .row .row,.row-fluid .row-fluid{
@@ -241,6 +247,19 @@ img.img-polaroid {
 
 .post3 p {
     min-height: 50px;
+}
+
+.wrapper .aboutUs{
+	margin: 100px;
+}
+
+.aboutUs .container{
+	display: flex;
+	justify-content: center;
+}
+
+.aboutUs .container h2{
+	text-align: center;	
 }
 
 .carousel-control.right,
@@ -488,6 +507,14 @@ header ul.nav li ul li a {
 	text-transform:uppercase;
 }
 
+.program{
+	margin-bottom: 30px;
+	background-color: #f9f9f9;	
+}
+
+.program img{
+	margin-top: 30px;
+}
 
 .navbar .nav > li > a {
   color: #5A5A5A;
@@ -1979,6 +2006,13 @@ width: 100%;
 		width:100%;
 	}
 
+	.item .row, .row-fluid {
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
 	.flex-caption .btn {
     width: 200px;
     position: absolute;
@@ -2018,6 +2052,14 @@ width: 100%;
   border-color: none;
   background: #F58A2E;
 }
+
+	.item .row, .row-fluid {
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
 .navbar-default .navbar-toggle .icon-bar {
 background-color: #FFF;
 border-radius: 0;
@@ -2213,6 +2255,12 @@ li.active {
 		margin-top:20px;
 	}
 
+	.item .row, .row-fluid {
+		margin-bottom: 30px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
 
 	.search{
 		float:left;
@@ -2286,7 +2334,7 @@ li.active {
     width: 100%;
 	}
 
-	.row, .row-fluid {
+	.item .row, .row-fluid {
 		margin-bottom: 10px;
 	}
 

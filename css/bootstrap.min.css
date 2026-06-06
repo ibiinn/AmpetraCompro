@@ -5948,7 +5948,7 @@ button.close {
 .carousel-control {
     position: absolute;
     top: 0;
-    left: -45px;
+    left: 0;
     bottom: 0;
     width: 15%;
     opacity: .5;
@@ -6025,14 +6025,6 @@ button.close {
     list-style: none;
     text-align: center
     
-}
-
-#newsCarousel .row{
-    display:flex;
-}
-
-#newsCarousel .col-md-4{
-    display:flex;
 }
 
 .carousel-indicators li {
