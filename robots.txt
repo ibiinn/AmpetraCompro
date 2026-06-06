@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ampetrajabar.or.id/sitemap.xml
+Sitemap: https://ampetradpwjabar.com/sitemap.xml
