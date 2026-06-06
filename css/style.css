@@ -2005,6 +2005,11 @@ width: 100%;
 
 @media (min-width: 768px) and (max-width: 979px) {
 
+	footer .row{
+		display: flex;
+		flex-direction: column;
+	}
+
 	a.detail{
 		background:none;
 		width:100%;
@@ -2056,6 +2061,11 @@ width: 100%;
   border-color: none;
   background: #F58A2E;
 }
+
+footer .row{
+		display: flex;
+		flex-direction: column;
+	}
 
 	.item .row, .row-fluid {
 		margin-bottom: 30px;
@@ -2259,6 +2269,11 @@ li.active {
 		margin-top:20px;
 	}
 
+	footer .row{
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.item .row, .row-fluid {
 		margin-bottom: 30px;
 		display: flex;
